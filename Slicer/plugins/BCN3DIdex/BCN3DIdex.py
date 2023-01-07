@@ -42,7 +42,7 @@ class BCN3DIdex(Extension):
             try:
                 left_extruder.enabledChanged.disconnect(self._onEnabledChangedLeft)
                 right_extruder.enabledChanged.disconnect(self._onEnabledChangedRight)
-            except Exception:
+            #except Exception:
                 # Just in case the connection didn't exists
                 pass
 

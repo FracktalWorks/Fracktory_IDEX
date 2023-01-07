@@ -83,51 +83,51 @@ Item
         ExclusiveGroup { id: mainWindowHeaderMenuGroup }
     }
 
-    // Shortcut button to quick access the Toolbox
+    // // Shortcut button to quick access the Toolbox
 
-    Controls2.Button
-    {
-        id: supportbutton
-        text: catalog.i18nc("@action:button", "Support")
-        height: Math.round(0.5 * UM.Theme.getSize("main_window_header").height)
-        hoverEnabled: true
-        onClicked: Qt.openUrlExternally("https://3d.bcn3d.com/chatbot");
-        background: Rectangle
-        {
-            radius: UM.Theme.getSize("action_button_radius").width
-            color: supportbutton.hovered ? UM.Theme.getColor("main_window_header_background") : UM.Theme.getColor("primary_text")
-            border.width: UM.Theme.getSize("default_lining").width
-            border.color: UM.Theme.getColor("primary_text")
-        }
-        contentItem: Label
-        {
-            id: label
-            text: supportbutton.text
-            font: UM.Theme.getFont("default")
-            color: supportbutton.hovered ? UM.Theme.getColor("primary_text") : UM.Theme.getColor("main_window_header_background")
-            width: contentWidth
-            verticalAlignment: Text.AlignVCenter
-            renderType: Text.NativeRendering
-        }
+    // Controls2.Button
+    // {
+    //     id: supportbutton
+    //     text: catalog.i18nc("@action:button", "Support")
+    //     height: Math.round(0.5 * UM.Theme.getSize("main_window_header").height)
+    //     hoverEnabled: true
+    //     onClicked: Qt.openUrlExternally("https://3d.bcn3d.com/chatbot");
+    //     background: Rectangle
+    //     {
+    //         radius: UM.Theme.getSize("action_button_radius").width
+    //         color: supportbutton.hovered ? UM.Theme.getColor("main_window_header_background") : UM.Theme.getColor("primary_text")
+    //         border.width: UM.Theme.getSize("default_lining").width
+    //         border.color: UM.Theme.getColor("primary_text")
+    //     }
+    //     contentItem: Label
+    //     {
+    //         id: label
+    //         text: supportbutton.text
+    //         font: UM.Theme.getFont("default")
+    //         color: supportbutton.hovered ? UM.Theme.getColor("primary_text") : UM.Theme.getColor("main_window_header_background")
+    //         width: contentWidth
+    //         verticalAlignment: Text.AlignVCenter
+    //         renderType: Text.NativeRendering
+    //     }
 
 
-        anchors
-        {
-            right: accountWidget.left
-            rightMargin: UM.Theme.getSize("default_margin").width
-            verticalCenter: parent.verticalCenter
-        }
+    //     anchors
+    //     {
+    //         right: accountWidget.left
+    //         rightMargin: UM.Theme.getSize("default_margin").width
+    //         verticalCenter: parent.verticalCenter
+    //     }
 
-    }
+    // }
 
-    AccountWidget
-    {
-        id: accountWidget
-        anchors
-        {
-            verticalCenter: parent.verticalCenter
-            right: parent.right
-            rightMargin: UM.Theme.getSize("default_margin").width
-        }
-    }
+    // AccountWidget
+    // {
+    //     id: accountWidget
+    //     anchors
+    //     {
+    //         verticalCenter: parent.verticalCenter
+    //         right: parent.right
+    //         rightMargin: UM.Theme.getSize("default_margin").width
+    //     }
+    // }
 }
