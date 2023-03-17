@@ -26,25 +26,26 @@ Item
             id: titleLabel
             anchors.horizontalCenter: parent.horizontalCenter
             horizontalAlignment: Text.AlignHCenter
-            text: catalog.i18nc("@label", "Welcome to BCN3D Stratos")
+            //text: catalog.i18nc("@label", "Welcome to BCN3D Stratos")
+            text: catalog.i18nc("@label", "Welcome to Fracktory")
             color: UM.Theme.getColor("primary_button")
             font: UM.Theme.getFont("huge")
             renderType: Text.NativeRendering
         }
 
-        Image
-        {
-            id: curaImage
-            anchors.horizontalCenter: parent.horizontalCenter
-            source: UM.Theme.getImage("first_run_welcome_cura")
-        }
+        // Image
+        // {
+        //     id: curaImage
+        //     anchors.horizontalCenter: parent.horizontalCenter
+        //     source: UM.Theme.getImage("first_run_welcome_cura")
+        // }
 
         Label
         {
             id: textLabel
             anchors.horizontalCenter: parent.horizontalCenter
             horizontalAlignment: Text.AlignHCenter
-            text: catalog.i18nc("@text", "Please follow these steps to set up\nStratos. This will only take a few moments.")
+            text: catalog.i18nc("@text", "Please follow these steps to set up\nFracktory. This will only take a few moments.")
             font: UM.Theme.getFont("medium")
             color: UM.Theme.getColor("text")
             renderType: Text.NativeRendering

@@ -9,6 +9,7 @@
         <GUID>d26863d1-3302-4401-bfa4-90c3059653e6</GUID>
         <version>1</version>
         <color_code>#AAAAFF</color_code>
+        <instruction_link>https://www.bcn3d.com/product/ultrafuse17-4ph/</instruction_link>
     </metadata>
     <properties>
         <density>5.1</density>
@@ -19,7 +20,7 @@
         <setting key="heated bed temperature">105</setting>
         <setting key="standby temperature">150</setting>
         <machine>
-            <machine_identifier manufacturer="BCN3D Technologies" product="bcn3dw50" />
+            <machine_identifier manufacturer="Fracktal Works" product="bcn3dw50" />
             <hotend id="0.4mm">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -38,7 +39,7 @@
             </hotend>
         </machine>
         <machine>
-            <machine_identifier manufacturer="BCN3D Technologies" product="bcn3dw27" />
+            <machine_identifier manufacturer="Fracktal Works" product="bcn3dw27" />
             <hotend id="0.4mm">
                 <setting key="hardware compatible">no</setting>
             </hotend>

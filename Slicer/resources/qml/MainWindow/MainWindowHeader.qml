@@ -83,7 +83,7 @@ Item
         ExclusiveGroup { id: mainWindowHeaderMenuGroup }
     }
 
-    // // Shortcut button to quick access the Toolbox
+    // Shortcut button to quick access the Toolbox
 
     // Controls2.Button
     // {

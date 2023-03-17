@@ -10,8 +10,9 @@
         <version>1</version>
         <color_code>#343537</color_code>
         <instructions>http://bcn3dtechnologies.com/en/3d-printer-filaments</instructions>
+        <instruction_link>https://www.bcn3d.com/product/pet-cf15/</instruction_link>
         <author>
-            <organization>BCN3D Technologies</organization>
+            <organization>Fracktal Works</organization>
             <contact>BCN3D Support</contact>
             <email>info@bcn3dtechnologies.com</email>
             <phone>+34 934 137 088</phone>
@@ -24,7 +25,7 @@
             </address>
         </author>
         <supplier>
-            <organization>BCN3D Technologies</organization>
+            <organization>Fracktal Works</organization>
             <contact>BCN3D Support</contact>
             <email>info@bcn3dtechnologies.com</email>
             <phone>+34 934 137 088</phone>
@@ -49,7 +50,7 @@
         <setting key="retraction amount">6.5</setting>
 
         <machine>
-            <machine_identifier manufacturer="BCN3D Technologies" product="bcn3dw50" />
+            <machine_identifier manufacturer="Fracktal Works" product="bcn3dw50" />
             <hotend id="0.4mm">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -68,7 +69,7 @@
             </hotend>
         </machine>
         <machine>
-            <machine_identifier manufacturer="BCN3D Technologies" product="bcn3dw27" />
+            <machine_identifier manufacturer="Fracktal Works" product="bcn3dw27" />
             <hotend id="0.4mm">
                 <setting key="hardware compatible">no</setting>
             </hotend>

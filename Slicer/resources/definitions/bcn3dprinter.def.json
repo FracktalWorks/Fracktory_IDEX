@@ -1,15 +1,15 @@
 {
-  "name": "BCN3D Printer Base Description",
+  "name": "Fracktal works Printer Base Description",
   "version": 2,
   "inherits": "fdmprinter",
   "metadata": {
     "visible": false,
-    "author": "BCN3D Technologies",
-    "manufacturer": "BCN3D Technologies",
-    "preferred_material": "generic_pla",
+    "author": "Fracktal works",
+    "manufacturer": "Fracktal works",
+    "preferred_material": "fracktal_abs_175",
     "preferred_variant_name": "0.4mm",
     "preferred_quality_type": "normal",
-    "variants_name": "Hotend",
+    "variants_name": "Nozzle",
     "has_machine_quality": true,
     "has_materials": true,
     "has_machine_materials": true,
@@ -26,7 +26,14 @@
       "children": {
         "machine_gcode_flavor": { "default_value": "RepRap (Marlin/Sprinter)" },
         "machine_extruder_count": { "default_value": 2 },
-        "machine_head_with_fans_polygon": { "default_value": [[-22, 60], [-22, -25], [27, 60], [27, -25]]}
+        "machine_head_with_fans_polygon": {
+          "default_value": [
+              [0, 123],
+              [0, -25],
+              [260, 123],
+              [260, -25]
+          ]
+      }
       }
     },
     "material": {
@@ -39,7 +46,7 @@
           "enabled": false,
           "settable_per_mesh": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         },
         "avoid_grinding_filament": {
           "label": "Prevent Filament Grinding",
@@ -48,7 +55,7 @@
           "default_value": false,
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         },
         "retraction_count_max_avoid_grinding_filament": {
           "label": "Maximum Retraction Count",
@@ -60,7 +67,7 @@
           "enabled": "avoid_grinding_filament",
           "value": "retraction_count_max",
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         }
       }
     },
@@ -79,7 +86,7 @@
           "enabled": "retraction_hop_enabled and machine_extruder_count > 1 and print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1' and prime_tower_enable",
           "settable_per_mesh": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D Setting"
+          "comments": "Custom setting"
         },
         "hop_at_layer_change": {
           "label": "Z Hop At Layer Change",
@@ -89,7 +96,7 @@
           "value": "not magic_spiralize",
           "settable_per_mesh": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         },
         "retraction_hop_height_at_layer_change": {
           "label": "Z Hop Height At Layer Change",
@@ -103,7 +110,7 @@
           "enabled": "hop_at_layer_change",
           "settable_per_mesh": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         },
         "retraction_hop_after_extruder_switch": {
           "label": "Z Hop After Extruder Switch",
@@ -125,7 +132,7 @@
           "maximum_value_warning": "10",
           "enabled": "retraction_hop_after_extruder_switch",
           "settable_per_extruder": false,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         }
       }
     },
@@ -138,7 +145,7 @@
           "default_value": false,
           "enabled": false,
           "settable_per_extruder": false,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         },
         "clone_cool_fan_gcode": {
           "label": "Clone Print GCode",
@@ -152,7 +159,7 @@
           "value": "'M108 P1      ;enable layer fan for the idle extruder' if clone_cool_fan else ''",
           "enabled": false,
           "settable_per_extruder": false,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         }
       }
     },
@@ -166,7 +173,7 @@
           "default_value": 10,
           "minimum_value": "0",
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         },
         "start_purge_speed": {
           "label": "Start Purge Speed",
@@ -178,7 +185,7 @@
           "maximum_value_warning": "45",
           "settable_per_mesh": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         }
       }
     },
@@ -198,7 +205,7 @@
           "default_value": "dual",
           "enabled": true,
           "settable_per_extruder": false,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         },
           "prime_tower_enable": {
             "resolve":  "False if 'BVOH' in extruderValues('material_type') else any(extruderValues('prime_tower_enable'))"
@@ -211,7 +218,7 @@
           "enabled": false,
           "settable_per_mesh": false,
           "settable_per_extruder": false,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         },
         "purge_in_bucket": {
           "label": "Purge At Tool Change",
@@ -220,7 +227,7 @@
           "default_value": false,
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         },
         "purge_distance": {
           "label": "Purge Distance",
@@ -232,7 +239,7 @@
           "maximum_value_warning": "50",
           "enabled": "purge_in_bucket and not smart_purge and print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1'",
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         },
         "purge_in_bucket_enable_gcode": {
           "label": "Purge At Tool Change Enable GCode",
@@ -246,7 +253,7 @@
           "value": "'' if purge_in_bucket and not smart_purge else ';'",
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         },
         "smart_purge": {
           "label": "Use Adaptive Purge Distance",
@@ -255,7 +262,7 @@
           "default_value": false,
           "enabled": "purge_in_bucket and print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1'",
           "settable_per_extruder": true,
-          "comments": "BCN3D setting",
+          "comments": "Custom setting",
           "children": {
             "smart_purge_minimum_purge_distance": {
               "label": "Minimum Purge Distance",
@@ -269,7 +276,7 @@
               "maximum_value_warning": "50",
               "enabled": "smart_purge and purge_in_bucket and print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1'",
               "settable_per_extruder": true,
-              "comments": "BCN3D setting"
+              "comments": "Custom setting"
             },
             "smart_purge_maximum_purge_distance": {
               "label": "Maximum Purge Distance",
@@ -282,7 +289,7 @@
               "maximum_value_warning": "50",
               "enabled": "smart_purge and purge_in_bucket and print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1'",
               "settable_per_extruder": true,
-              "comments": "BCN3D setting"
+              "comments": "Custom setting"
             },
             "smart_purge_slope": {
               "label": "Increase Distance by",
@@ -295,7 +302,7 @@
               "maximum_value_warning": "50",
               "enabled": "smart_purge and purge_in_bucket and print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1'",
               "settable_per_extruder": true,
-              "comments": "BCN3D setting"
+              "comments": "Custom setting"
             },
             "smart_purge_slope_gcode": {
               "label": "Distance Gradient",
@@ -306,7 +313,7 @@
               "value": "smart_purge_slope / float(60)",
               "enabled": false,
               "settable_per_extruder": true,
-              "comments": "BCN3D setting"
+              "comments": "Custom setting"
             }
           }
         },
@@ -322,7 +329,7 @@
           "value": "'' if smart_purge and purge_in_bucket else ';'",
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         },
         "prime_tower_closest_to": {
           "label": "Prime Tower Preferred Position",
@@ -342,7 +349,7 @@
           "enabled": "resolveOrValue('prime_tower_enable')",
           "settable_per_mesh": false,
           "settable_per_extruder": false,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         }
       }
     },
@@ -355,7 +362,7 @@
           "default_value": "",
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         },
         "used_material": {
           "label": "Used materials",
@@ -365,7 +372,7 @@
           "value": "'T' + str(extruderValue(extruder_nr, 'extruder_nr')) + ' ' + str(extruderValue(extruder_nr, 'material_type')) if adhesion_extruder_nr == extruder_nr or extruders_enabled_count == 2 else 'T' + str(extruderValue(extruder_nr, 'extruder_nr')) + ' ' + str(extruderValue(0, 'material_type')) if print_mode == \"mirror\" or print_mode == \"duplication\" else ''",
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         },
         "machine_nozzle_type": {
           "label": "Nozzle type",
@@ -374,7 +381,7 @@
           "default_value": "",
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         },
         "used_nozzle_size": {
           "label": "Used nozzle size",
@@ -384,7 +391,7 @@
           "value": "'T' + str(extruderValue(extruder_nr, 'extruder_nr')) + ' ' + str(extruderValue(extruder_nr, 'machine_nozzle_size')) + str(extruderValue(extruder_nr, 'machine_nozzle_type')) if adhesion_extruder_nr == extruder_nr or extruders_enabled_count == 2 else 'T' + str(extruderValue(extruder_nr, 'extruder_nr')) + ' ' + str(extruderValue(0, 'machine_nozzle_size')) + str(extruderValue(0, 'machine_nozzle_type')) if print_mode == \"mirror\" or print_mode == \"duplication\" else ''",
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         },
         "print_mode_gcode": {
           "label": "Print Mode GCode",
@@ -394,7 +401,7 @@
           "value": "'' if print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1' else 'M605 S6 \\t\\t;enable mirror mode' if print_mode == 'mirror' else 'M605 S5 \\t\\t;enable duplication mode'",
           "enabled": false,
           "settable_per_extruder": false,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         },
         "purge_in_bucket_before_start_gcode": {
           "label": "Purge in bucket before start GCode",
@@ -404,7 +411,7 @@
           "value": "'T' + str(extruderValue(extruder_nr, 'extruder_nr')) + '\\n' + 'G92 E0 \\t\\t;set zero the extruded length \\nG1 E' + str(extruderValue(extruder_nr, 'start_purge_distance')) + ' F' + str(extruderValue(extruder_nr, 'start_purge_speed')) + '\\nG92 E0 \\nG4 S2 \\t\\t;stabilize hotend \\nG1 E-0.5 F1000 \\nG92 E0' if adhesion_extruder_nr == extruder_nr or print_mode == \"mirror\" or print_mode == \"duplication\" else 'T' + str(extruderValue(extruder_nr, 'extruder_nr')) + '\\n' + 'G92 E0 \\t\\t;set zero the extruded length \\nG1 E' + str(extruderValue(extruder_nr, 'start_purge_distance')) + ' F' + str(extruderValue(extruder_nr, 'start_purge_speed')) + '\\nG92 E0 \\nG1 E-' + str(extruderValue(extruder_nr, 'switch_extruder_retraction_amount')) + ' F1000 \\nG92 E0' if adhesion_extruder_nr != extruder_nr and extruders_enabled_count == 2 else ''",
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Custom setting"
         }
       }
     }

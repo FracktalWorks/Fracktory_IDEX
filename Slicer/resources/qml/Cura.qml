@@ -114,26 +114,26 @@ UM.MainWindow
             // shortcut will activate properly because one of its parents is a window.
             //
             // This has been fixed for QtQuick Controls 2 since the Shortcut item has a context property.
-            Cura.Actions.parent = backgroundItem
+            // Cura.Actions.parent = backgroundItem
 
-            if (CuraApplication.shouldShowWelcomeDialog())
-            {
-                welcomeDialogItem.visible = true
-            }
-            else
-            {
-                welcomeDialogItem.visible = false
-            }
+            // if (CuraApplication.shouldShowWelcomeDialog())
+            // {
+            //     welcomeDialogItem.visible = true
+            // }
+            // else
+            // {
+            //     welcomeDialogItem.visible = false
+            // }
 
-            // Reuse the welcome dialog item to show "What's New" only.
-            if (CuraApplication.shouldShowWhatsNewDialog())
-            {
-                welcomeDialogItem.model = CuraApplication.getWhatsNewPagesModel()
-                welcomeDialogItem.progressBarVisible = false
-                welcomeDialogItem.visible = true
-            }
+            // // Reuse the welcome dialog item to show "What's New" only.
+            // if (CuraApplication.shouldShowWhatsNewDialog())
+            // {
+            //     welcomeDialogItem.model = CuraApplication.getWhatsNewPagesModel()
+            //     welcomeDialogItem.progressBarVisible = false
+            //     welcomeDialogItem.visible = true
+            // }
 
-            // Reuse the welcome dialog item to show the "Add printers" dialog. Triggered when there is no active
+            // // Reuse the welcome dialog item to show the "Add printers" dialog. Triggered when there is no active
             // machine and the user is logged in.
             if (!Cura.MachineManager.activeMachine && Cura.API.account.isLoggedIn)
             {

@@ -10,8 +10,9 @@
         <version>1</version>
         <color_code>#E6E3C8</color_code>
         <instructions>http://bcn3dtechnologies.com/en/3d-printer-filaments</instructions>
+        <instruction_link>https://www.bcn3d.com/product/bvoh-bcn3d-filaments/</instruction_link>
         <author>
-            <organization>BCN3D Technologies</organization>
+            <organization>Fracktal Works</organization>
             <contact>BCN3D Support</contact>
             <email>info@bcn3dtechnologies.com</email>
             <phone>+34 934 137 088</phone>
@@ -24,7 +25,7 @@
             </address>
         </author>
         <supplier>
-            <organization>BCN3D Technologies</organization>
+            <organization>Fracktal Works</organization>
             <contact>BCN3D Support</contact>
             <email>info@bcn3dtechnologies.com</email>
             <phone>+34 934 137 088</phone>
@@ -49,7 +50,7 @@
         <setting key="retraction amount">5</setting>
 
         <machine>
-           <machine_identifier manufacturer="BCN3D Technologies" product="bcn3dsigma" />
+           <machine_identifier manufacturer="Fracktal Works" product="bcn3dsigma" />
            <hotend id="0.3mm" />
            <hotend id="0.4mm" />
            <hotend id="0.5mm - Hardened Steel" />
@@ -64,7 +65,7 @@
            <hotend id="1.0mm" />
         </machine>
         <machine>
-           <machine_identifier manufacturer="BCN3D Technologies" product="bcn3dsigmar19" />
+           <machine_identifier manufacturer="Fracktal Works" product="bcn3dsigmar19" />
            <hotend id="0.3mm" />
            <hotend id="0.4mm" />
            <hotend id="0.5mm - Hardened Steel" />
@@ -73,7 +74,7 @@
            <hotend id="1.0mm" />
         </machine>
         <machine>
-            <machine_identifier manufacturer="BCN3D Technologies" product="bcn3dw50" />
+            <machine_identifier manufacturer="Fracktal Works" product="bcn3dw50" />
             <setting key="support offset">0</setting>
             <setting key="heated bed temperature">45</setting>
             <hotend id="0.4mm" />
@@ -88,7 +89,7 @@
             <hotend id="1.0mm" />
         </machine>
         <machine>
-            <machine_identifier manufacturer="BCN3D Technologies" product="bcn3dw27" />
+            <machine_identifier manufacturer="Fracktal Works" product="bcn3dw27" />
             <setting key="support offset">0</setting>
             <setting key="heated bed temperature">45</setting>
             <hotend id="0.4mm" />
@@ -103,7 +104,7 @@
             <hotend id="1.0mm" />
         </machine>
         <machine>
-            <machine_identifier manufacturer="BCN3D Technologies" product="bcn3dd25" />
+            <machine_identifier manufacturer="Fracktal Works" product="bcn3dd25" />
             <setting key="support offset">0</setting>
             <setting key="heated bed temperature">45</setting>
             <hotend id="0.4mm" />

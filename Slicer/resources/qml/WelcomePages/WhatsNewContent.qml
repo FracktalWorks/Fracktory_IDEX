@@ -56,4 +56,5 @@ Item
         text: catalog.i18nc("@button", "Next")
         onClicked: base.showNextPage()
     }
+    
 }
