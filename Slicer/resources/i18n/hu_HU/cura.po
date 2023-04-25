@@ -3640,7 +3640,7 @@ msgstr "Teljes körű megoldás az olvadószálas 3D-s nyomtatáshoz."
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Dialogs/AboutDialog.qml:85
 msgctxt "@info:credit"
 msgid ""
-"BCN3D Stratos is developed by Fracktal Works based on the open source project Cura developed by Ultimaker B.V. in cooperation with the community.\n"
+"BCN3D Stratos is developed by BCN3D Technologies based on the open source project Cura developed by Ultimaker B.V. in cooperation with the community.\n"
 "Stratos proudly uses the following open source projects:"
 msgstr "A Cura-t az Ultimaker B.V fejlesztette ki a közösséggel együttműködésben. A Cura büszkén használja a következő nyílt forráskódú projekteket:"
 

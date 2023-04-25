@@ -28,9 +28,11 @@
 
 
 
-      "machine_disallowed_areas": { "value": "[] if print_mode == 'singleT0' or print_mode == 'singleT1' else [[[0, machine_depth / 2], [0, -machine_depth / 2], [machine_width / 2, -machine_depth / 2], [machine_width / 2, machine_depth / 2]]] if print_mode == 'mirror' or print_mode == 'duplicate' else [[[0, machine_depth / 2],[0, -machine_depth / 2],[(machine_width - 300) / 2, -machine_depth / 2], [(machine_width - 300) / 2, machine_depth / 2], [(machine_width + 300) / 2, machine_depth / 2], [(machine_width + 300) / 2, -machine_depth / 2], [machine_width / 2, -machine_depth / 2], [machine_width / 2, machine_depth / 2]]] if print_mode == 'dual' else [[[0, machine_depth / 2], [0, -machine_depth / 2], [machine_width / 2, -machine_depth / 2], [machine_width / 2, machine_depth / 2]]]" },
+
+      "machine_disallowed_areas": { "value": "[] if print_mode == 'singleT0' or print_mode == 'singleT1' else [[[0, machine_depth / 2], [0, -machine_depth / 2], [machine_width / 2, -machine_depth / 2], [machine_width / 2, machine_depth / 2]]] if print_mode == 'mirror' or print_mode == 'duplicate' else [[[0, machine_depth / 2], [0, -machine_depth / 2], [(80 - machine_width / 4), -machine_depth / 2], [(80 - machine_width / 4), machine_depth / 4], [(220 + machine_width / 4), machine_depth / 2], [(220 + machine_width / 4), -machine_depth / 2], [machine_width / 2, -machine_depth / 2], [machine_width / 2, machine_depth / 2]]] if print_mode == 'dual' else [[[0, machine_depth / 2], [0, -machine_depth / 2], [machine_width / 2, -machine_depth / 2], [machine_width / 2, machine_depth / 2]]]" },
 
 
+    
 
 
 

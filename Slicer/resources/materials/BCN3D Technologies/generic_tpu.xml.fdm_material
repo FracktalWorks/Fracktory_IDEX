@@ -22,7 +22,7 @@
         <setting key="retraction amount">9</setting>
 
         <machine>
-           <machine_identifier manufacturer="Fracktal Works" product="bcn3dsigma" />
+           <machine_identifier manufacturer="BCN3D Technologies" product="bcn3dsigma" />
            <hotend id="0.3mm" />
            <hotend id="0.4mm" />
            <hotend id="0.5mm - Hardened Steel" />
@@ -37,7 +37,7 @@
            <hotend id="1.0mm" />
         </machine>
         <machine>
-           <machine_identifier manufacturer="Fracktal Works" product="bcn3dsigmar19" />
+           <machine_identifier manufacturer="BCN3D Technologies" product="bcn3dsigmar19" />
            <hotend id="0.3mm" />
            <hotend id="0.4mm" />
            <hotend id="0.5mm - Hardened Steel" />
@@ -46,7 +46,7 @@
            <hotend id="1.0mm" />
         </machine>
         <machine>
-            <machine_identifier manufacturer="Fracktal Works" product="bcn3dw50" />
+            <machine_identifier manufacturer="BCN3D Technologies" product="bcn3dw50" />
             <hotend id="0.4mm" />
             <hotend id="Hotend M (0.4mm)">
                 <setting key="hardware compatible">no</setting>
@@ -59,7 +59,7 @@
             <hotend id="1.0mm" />
         </machine>
         <machine>
-            <machine_identifier manufacturer="Fracktal Works" product="bcn3dw27" />
+            <machine_identifier manufacturer="BCN3D Technologies" product="bcn3dw27" />
             <hotend id="0.4mm" />
             <hotend id="Hotend M (0.4mm)">
                 <setting key="hardware compatible">no</setting>
@@ -72,7 +72,7 @@
             <hotend id="1.0mm" />
         </machine>
         <machine>
-            <machine_identifier manufacturer="Fracktal Works" product="bcn3dd25" />
+            <machine_identifier manufacturer="BCN3D Technologies" product="bcn3dd25" />
             <hotend id="0.4mm" />
             <hotend id="0.8mm" />
         </machine>

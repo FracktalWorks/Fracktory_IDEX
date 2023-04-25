@@ -82,7 +82,7 @@ UM.Dialog
         width: parent.width
 
         //: About dialog application author note
-        text: catalog.i18nc("@info:credit","BCN3D Stratos is developed by Fracktal Works based on the open source project Cura developed by Ultimaker B.V. in cooperation with the community.\nBCN3D Stratos uses the following open source projects:")
+        text: catalog.i18nc("@info:credit","BCN3D Stratos is developed by BCN3D Technologies based on the open source project Cura developed by Ultimaker B.V. in cooperation with the community.\nBCN3D Stratos uses the following open source projects:")
         font: UM.Theme.getFont("system")
         wrapMode: Text.WordWrap
         anchors.top: description.bottom

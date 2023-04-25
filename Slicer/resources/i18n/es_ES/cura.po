@@ -3522,10 +3522,10 @@ msgstr "Solución completa para la impresión 3D de filamento fundido."
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Dialogs/AboutDialog.qml:85
 msgctxt "@info:credit"
 msgid ""
-"BCN3D Stratos is developed by Fracktal Works based on the open source project Cura developed by Ultimaker B.V. in cooperation with the community.\n"
+"BCN3D Stratos is developed by BCN3D Technologies based on the open source project Cura developed by Ultimaker B.V. in cooperation with the community.\n"
 "Stratos proudly uses the following open source projects:"
 msgstr ""
-"BCN3D Stratos ha sido desarrollado por Fracktal Works basado en el proyecto de código abierto Cura desarrollado por Ultimaker B.V. en cooperación con la comunidad\n"
+"BCN3D Stratos ha sido desarrollado por BCN3D Technologies basado en el proyecto de código abierto Cura desarrollado por Ultimaker B.V. en cooperación con la comunidad\n"
 "Stratos se enorgullece de utilizar los siguientes proyectos de código abierto:"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Dialogs/AboutDialog.qml:135
