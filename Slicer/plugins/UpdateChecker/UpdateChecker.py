@@ -19,7 +19,7 @@ class UpdateChecker(Extension):
     The plugin is currently only usable for applications maintained by BCN3D. But it should be relatively easy
     to change it to work for other applications.
     """
-    url = "http://api.github.com/repos/bcn3d/stratos/releases/latest"
+    #url = "http://api.github.com/repos/bcn3d/stratos/releases/latest"
 
     def __init__(self):
         super().__init__()

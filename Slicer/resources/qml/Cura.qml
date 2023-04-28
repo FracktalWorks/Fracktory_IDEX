@@ -118,20 +118,20 @@ UM.MainWindow
 
             if (CuraApplication.shouldShowWelcomeDialog())
             {
-                welcomeDialogItem.visible = true
+                welcomeDialogItem.visible = false
             }
             else
             {
                 welcomeDialogItem.visible = false
             }
 
-            // Reuse the welcome dialog item to show "What's New" only.
-            if (CuraApplication.shouldShowWhatsNewDialog())
-            {
-                welcomeDialogItem.model = CuraApplication.getWhatsNewPagesModel()
-                welcomeDialogItem.progressBarVisible = false
-                welcomeDialogItem.visible = true
-            }
+            //// Reuse the welcome dialog item to show "What's New" only.
+            //if (CuraApplication.shouldShowWhatsNewDialog())
+            //{
+            //    welcomeDialogItem.model = CuraApplication.getWhatsNewPagesModel()
+            //    welcomeDialogItem.progressBarVisible = false
+            //    welcomeDialogItem.visible = true
+            //}
 
             // Reuse the welcome dialog item to show the "Add printers" dialog. Triggered when there is no active
             // machine and the user is logged in.
