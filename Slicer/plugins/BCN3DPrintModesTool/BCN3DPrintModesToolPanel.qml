@@ -78,8 +78,38 @@ Item
                 style: UM.Theme.styles.tool_button;
                 z: 3
             }
-            
-            
+             Button
+            {
+                id: duplication
+                text: catalog.i18nc("@label", "Duplication")
+                iconSource: UM.Theme.getIcon("duplicationicon");
+                property bool needBorder: true
+                checkable: true
+                checked: Cura.PrintersManagerService.getPrintMode() == "duplication"
+                onClicked:{
+                 Cura.PrintersManagerService.setPrintMode("duplication")
+                 CuraActions.setExtruderForSelection(extrudersModel.getItem(0).id)
+
+                }
+                style: UM.Theme.styles.tool_button;
+                z: 2
+            }
+            Button
+            {
+                id: mirrorButton
+                text:  catalog.i18nc("@label", "Mirror")
+                iconSource: UM.Theme.getIcon("mirroricon");
+                property bool needBorder: true
+                checkable: true
+                checked: Cura.PrintersManagerService.getPrintMode() == "mirror"
+                onClicked:{
+                 Cura.PrintersManagerService.setPrintMode("mirror")
+                 CuraActions.setExtruderForSelection(extrudersModel.getItem(0).id)
+
+                }
+                style: UM.Theme.styles.tool_button;
+                z: 1
+            }
         }
 
         Label

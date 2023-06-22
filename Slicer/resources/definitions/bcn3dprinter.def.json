@@ -4,8 +4,8 @@
   "inherits": "fdmprinter",
   "metadata": {
     "visible": false,
-    "author": "Fracktal Works",
-    "manufacturer": "Fracktal Works",
+    "author": "BCN3D Technologies",
+    "manufacturer": "BCN3D Technologies",
     "preferred_material": "BCN3D_Filaments_PLA_Light_Blue",
     "preferred_variant_name": "0.4mm",
     "preferred_quality_type": "normal",
