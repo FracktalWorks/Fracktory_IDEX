@@ -87,7 +87,7 @@ Item
     {
         id: showTroubleShootingAction
         onTriggered: Qt.openUrlExternally("https://support.bcn3d.com/knowledge/slice-bcn3d-stratos")
-        text: catalog.i18nc("@action:inmenu", "Fracktory Knowledge base");
+        text: catalog.i18nc("@action:inmenu", "BCN3D Knowledge base");
     }
 
     Action
@@ -172,7 +172,7 @@ Item
     Action
     {
         id: preferencesAction
-        text: catalog.i18nc("@action:inmenu", "Configure Fracktory...")
+        text: catalog.i18nc("@action:inmenu", "Configure BCN3D Stratos...")
         iconName: "configure"
     }
 
@@ -241,7 +241,7 @@ Item
     Action
     {
         id: documentationAction;
-        text: catalog.i18nc("@action:inmenu menubar:help", "Fracktory Introduction");
+        text: catalog.i18nc("@action:inmenu menubar:help", "BCN3D Stratos Introduction");
         iconName: "help-contents";
         shortcut: StandardKey.Help;
         onTriggered: Qt.openUrlExternally("https://support.bcn3d.com/knowledge/bcn3d-stratos-introduction")

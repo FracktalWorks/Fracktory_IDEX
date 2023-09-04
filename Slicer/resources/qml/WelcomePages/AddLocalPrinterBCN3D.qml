@@ -37,7 +37,7 @@ Item
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.topMargin: UM.Theme.getSize("default_margin").height
-        contentShown: true  // by default expand the network printer list
+        
         title: catalog.i18nc("@label", "Add a non-networked printer")
 
         onClicked:
@@ -100,6 +100,7 @@ Item
                 // Create a local printer
                 const localPrinterItem = addLocalPrinterDropDown.contentItem.currentItem
                 const printerName = addLocalPrinterDropDown.contentItem.printerName
+                contentShown: true  // by default expand the network printer list
                 if(Cura.MachineManager.addMachine(localPrinterItem.id, printerName))
                 {
                     base.showNextPage()
