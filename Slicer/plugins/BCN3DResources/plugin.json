@@ -1,0 +1,7 @@
+{
+    "name": "BCN3DResources",
+    "author": "BCN3D",
+    "version": "1.0.0",
+    "description": "Fetch BCN3D Resources",
+    "api": "7.0.0"
+}

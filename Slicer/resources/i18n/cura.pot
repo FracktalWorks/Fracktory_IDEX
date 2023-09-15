@@ -5653,7 +5653,7 @@ msgstr ""
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/WelcomePages/WelcomeContent.qml:29
 msgctxt "@label"
-msgid "Welcome to BCN3D Stratos"
+msgid "Welcome to Fracktal Works Fracktory"
 msgstr ""
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/WelcomePages/WelcomeContent.qml:47
