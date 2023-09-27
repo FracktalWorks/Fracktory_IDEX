@@ -177,7 +177,7 @@
           "description": "The speed at which the filament is pushed by the extruder when purging in the purge tray.",
           "unit": "mm/s",
           "type": "float",
-          "default_value": 30,
+          "default_value": 20,
           "minimum_value": "0",
           "maximum_value_warning": "45",
           "settable_per_mesh": false,
@@ -212,7 +212,7 @@
           "description": "Allows the new tool to go straight to the position where it has to print, instead of going to the last position before tool change and then travel to the position where it has to print.",
           "type": "bool",
           "default_value": false,
-          "enabled": false,
+          "enabled": true,
           "settable_per_mesh": false,
           "settable_per_extruder": false,
           "comments": "Fracktal Setting"
@@ -221,8 +221,8 @@
           "label": "Purge At Tool Change",
           "description": "Add an extra prime amount in the bucket to compensate oozed material while the Extruder was idle. Disable Prime tower to save time and filament.",
           "type": "bool",
-          "default_value": false,
-          "enabled": false,
+          "default_value": true,
+          "enabled": true,
           "settable_per_extruder": true,
           "comments": "Fracktal Setting"
         },
