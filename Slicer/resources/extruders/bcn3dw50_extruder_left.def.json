@@ -24,6 +24,9 @@
         "machine_extruder_end_pos_abs": { "default_value": false },
         "machine_extruder_end_pos_x": { "default_value": 0.0 },
         "machine_extruder_end_pos_y": { "default_value": 0.0 },
-        "extruder_prime_pos_x": { "default_value": 0.0 }
+        "extruder_prime_pos_x": { "default_value": 0.0 },
+        "start_purge_distance": { "default_value": 5 },
+        "brim_replaces_support": { "default_value": true},
+        "switch_extruder_retraction_amount": { "default_value": 20 }
     }
 }

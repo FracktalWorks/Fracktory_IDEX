@@ -133,7 +133,7 @@
         "retraction_hop":                   "0.0",
         "retraction_min_travel":            "1.5",
         "retraction_minimal_extrusion":     "0.02",
-        "retraction_speed":                 "40.0",
+        "retraction_speed":                 "20.0",
         "simple_mode":                      "False",
         "skirt_gap":                        "3.0",
         "skirt_line_count":                 "1",

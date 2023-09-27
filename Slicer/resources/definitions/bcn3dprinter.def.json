@@ -167,7 +167,7 @@
           "description": "Filament distance purged before extruder starts printing.",
           "unit": "mm",
           "type": "float",
-          "default_value": 10,
+          "default_value": 5,
           "minimum_value": "0",
           "settable_per_extruder": true,
           "comments": "BCN3D setting"
@@ -177,7 +177,7 @@
           "description": "The speed at which the filament is pushed by the extruder when purging in the purge tray.",
           "unit": "mm/s",
           "type": "float",
-          "default_value": 30,
+          "default_value": 20,
           "minimum_value": "0",
           "maximum_value_warning": "45",
           "settable_per_mesh": false,
