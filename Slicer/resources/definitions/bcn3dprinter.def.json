@@ -43,7 +43,7 @@
           "enabled": false,
           "settable_per_mesh": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
         "avoid_grinding_filament": {
           "label": "Prevent Filament Grinding",
@@ -52,7 +52,7 @@
           "default_value": false,
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
         "retraction_count_max_avoid_grinding_filament": {
           "label": "Maximum Retraction Count",
@@ -64,7 +64,7 @@
           "enabled": "avoid_grinding_filament",
           "value": "retraction_count_max",
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         }
       }
     },
@@ -83,7 +83,7 @@
           "enabled": "retraction_hop_enabled and machine_extruder_count > 1 and print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1' and prime_tower_enable",
           "settable_per_mesh": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D Setting"
+          "comments": "Fracktal Setting"
         },
         "hop_at_layer_change": {
           "label": "Z Hop At Layer Change",
@@ -93,7 +93,7 @@
           "value": "not magic_spiralize",
           "settable_per_mesh": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
         "retraction_hop_height_at_layer_change": {
           "label": "Z Hop Height At Layer Change",
@@ -107,7 +107,7 @@
           "enabled": "hop_at_layer_change",
           "settable_per_mesh": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
         "retraction_hop_after_extruder_switch": {
           "label": "Z Hop After Extruder Switch",
@@ -129,7 +129,7 @@
           "maximum_value_warning": "10",
           "enabled": "retraction_hop_after_extruder_switch",
           "settable_per_extruder": false,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         }
       }
     },
@@ -142,7 +142,7 @@
           "default_value": false,
           "enabled": false,
           "settable_per_extruder": false,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
         "clone_cool_fan_gcode": {
           "label": "Clone Print GCode",
@@ -156,7 +156,7 @@
           "value": "'M108 P1      ;enable layer fan for the idle extruder' if clone_cool_fan else ''",
           "enabled": false,
           "settable_per_extruder": false,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         }
       }
     },
@@ -170,7 +170,7 @@
           "default_value": 5,
           "minimum_value": "0",
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
         "start_purge_speed": {
           "label": "Start Purge Speed",
@@ -182,7 +182,7 @@
           "maximum_value_warning": "45",
           "settable_per_mesh": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         }
       }
     },
@@ -202,7 +202,7 @@
           "default_value": "dual",
           "enabled": true,
           "settable_per_extruder": false,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
           "prime_tower_enable": {
             "resolve":  "False if 'BVOH' in extruderValues('material_type') else any(extruderValues('prime_tower_enable'))"
@@ -215,7 +215,7 @@
           "enabled": false,
           "settable_per_mesh": false,
           "settable_per_extruder": false,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
         "purge_in_bucket": {
           "label": "Purge At Tool Change",
@@ -224,7 +224,7 @@
           "default_value": false,
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
         "purge_distance": {
           "label": "Purge Distance",
@@ -236,7 +236,7 @@
           "maximum_value_warning": "50",
           "enabled": "purge_in_bucket and not smart_purge and print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1'",
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
         "purge_in_bucket_enable_gcode": {
           "label": "Purge At Tool Change Enable GCode",
@@ -250,7 +250,7 @@
           "value": "'' if purge_in_bucket and not smart_purge else ';'",
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
         "smart_purge": {
           "label": "Use Adaptive Purge Distance",
@@ -259,7 +259,7 @@
           "default_value": false,
           "enabled": "purge_in_bucket and print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1'",
           "settable_per_extruder": true,
-          "comments": "BCN3D setting",
+          "comments": "Fracktal Setting",
           "children": {
             "smart_purge_minimum_purge_distance": {
               "label": "Minimum Purge Distance",
@@ -273,7 +273,7 @@
               "maximum_value_warning": "50",
               "enabled": "smart_purge and purge_in_bucket and print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1'",
               "settable_per_extruder": true,
-              "comments": "BCN3D setting"
+              "comments": "Fracktal Setting"
             },
             "smart_purge_maximum_purge_distance": {
               "label": "Maximum Purge Distance",
@@ -286,7 +286,7 @@
               "maximum_value_warning": "50",
               "enabled": "smart_purge and purge_in_bucket and print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1'",
               "settable_per_extruder": true,
-              "comments": "BCN3D setting"
+              "comments": "Fracktal Setting"
             },
             "smart_purge_slope": {
               "label": "Increase Distance by",
@@ -299,7 +299,7 @@
               "maximum_value_warning": "50",
               "enabled": "smart_purge and purge_in_bucket and print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1'",
               "settable_per_extruder": true,
-              "comments": "BCN3D setting"
+              "comments": "Fracktal Setting"
             },
             "smart_purge_slope_gcode": {
               "label": "Distance Gradient",
@@ -310,7 +310,7 @@
               "value": "smart_purge_slope / float(60)",
               "enabled": false,
               "settable_per_extruder": true,
-              "comments": "BCN3D setting"
+              "comments": "Fracktal Setting"
             }
           }
         },
@@ -326,7 +326,7 @@
           "value": "'' if smart_purge and purge_in_bucket else ';'",
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
         "prime_tower_closest_to": {
           "label": "Prime Tower Preferred Position",
@@ -346,7 +346,7 @@
           "enabled": "resolveOrValue('prime_tower_enable')",
           "settable_per_mesh": false,
           "settable_per_extruder": false,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         }
       }
     },
@@ -359,7 +359,7 @@
           "default_value": "",
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
         "used_material": {
           "label": "Used materials",
@@ -369,7 +369,7 @@
           "value": "'T' + str(extruderValue(extruder_nr, 'extruder_nr')) + ' ' + str(materialInfoInExtruder(extruder_nr, 'material')) if adhesion_extruder_nr == extruder_nr or extruders_enabled_count == 2 else 'T' + str(extruderValue(extruder_nr, 'extruder_nr')) + ' ' + str(materialInfoInExtruder(0, 'material')) if print_mode == \"mirror\" or print_mode == \"duplication\" else ''",
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
         "used_material_brand": {
           "label": "Used materials",
@@ -379,7 +379,7 @@
           "value": "'T' + str(extruderValue(extruder_nr, 'extruder_nr')) + ' ' + str(materialInfoInExtruder(extruder_nr, 'brand')) if adhesion_extruder_nr == extruder_nr or extruders_enabled_count == 2 else 'T' + str(extruderValue(extruder_nr, 'extruder_nr')) + ' ' + str(materialInfoInExtruder(0, 'brand')) if print_mode == \"mirror\" or print_mode == \"duplication\" else ''",
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
         "machine_nozzle_type": {
           "label": "Nozzle type",
@@ -388,7 +388,7 @@
           "default_value": "",
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
         "used_nozzle_size": {
           "label": "Used nozzle size",
@@ -398,7 +398,7 @@
           "value": "'T' + str(extruderValue(extruder_nr, 'extruder_nr')) + ' ' + str(extruderValue(extruder_nr, 'machine_nozzle_size')) + str(extruderValue(extruder_nr, 'machine_nozzle_type')) if adhesion_extruder_nr == extruder_nr or extruders_enabled_count == 2 else 'T' + str(extruderValue(extruder_nr, 'extruder_nr')) + ' ' + str(extruderValue(0, 'machine_nozzle_size')) + str(extruderValue(0, 'machine_nozzle_type')) if print_mode == \"mirror\" or print_mode == \"duplication\" else ''",
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
         "print_mode_gcode": {
           "label": "Print Mode GCode",
@@ -408,7 +408,7 @@
           "value": "'' if print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1' else 'M605 S3 \\t\\t;enable mirror mode' if print_mode == 'mirror' else 'M605 S2 \\t\\t;enable duplication mode'",
           "enabled": false,
           "settable_per_extruder": false,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         },
         "purge_in_bucket_before_start_gcode": {
           "label": "Purge in bucket before start GCode",
@@ -418,7 +418,7 @@
           "value": "'T' + str(extruderValue(extruder_nr, 'extruder_nr')) + '\\n' + 'G92 E0 \\t\\t;set zero the extruded length \\nG1 E' + str(extruderValue(extruder_nr, 'start_purge_distance')) + ' F' + str(extruderValue(extruder_nr, 'start_purge_speed')) + '\\nG92 E0 \\nG4 S2 \\t\\t;stabilize hotend \\nG1 E-0.5 F1000 \\nG92 E0' if adhesion_extruder_nr == extruder_nr or print_mode == \"mirror\" or print_mode == \"duplication\" else 'T' + str(extruderValue(extruder_nr, 'extruder_nr')) + '\\n' + 'G92 E0 \\t\\t;set zero the extruded length \\nG1 E' + str(extruderValue(extruder_nr, 'start_purge_distance')) + ' F' + str(extruderValue(extruder_nr, 'start_purge_speed')) + '\\nG92 E0 \\nG1 E-' + str(extruderValue(extruder_nr, 'switch_extruder_retraction_amount')) + ' F1000 \\nG92 E0' if adhesion_extruder_nr != extruder_nr and extruders_enabled_count == 2 else ''",
           "enabled": false,
           "settable_per_extruder": true,
-          "comments": "BCN3D setting"
+          "comments": "Fracktal Setting"
         }
       }
     }

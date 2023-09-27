@@ -138,7 +138,7 @@
                 "default_value": "dual",
                 "enabled": true,
                 "settable_per_extruder": false,
-                "comments": "BCN3D setting"
+                "comments": "Fracktal Setting"
               },
                 "prime_tower_enable": {
                   "resolve":  "False if 'BVOH' in extruderValues('material_type') else any(extruderValues('prime_tower_enable'))"
@@ -151,7 +151,7 @@
                 "enabled": false,
                 "settable_per_mesh": false,
                 "settable_per_extruder": false,
-                "comments": "BCN3D setting"
+                "comments": "Fracktal Setting"
               },
               "purge_in_bucket": {
                 "label": "Purge At Tool Change",
@@ -160,7 +160,7 @@
                 "default_value": false,
                 "enabled": false,
                 "settable_per_extruder": true,
-                "comments": "BCN3D setting"
+                "comments": "Fracktal Setting"
               },
               "purge_distance": {
                 "label": "Purge Distance",
@@ -172,7 +172,7 @@
                 "maximum_value_warning": "50",
                 "enabled": "purge_in_bucket and not smart_purge and print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1'",
                 "settable_per_extruder": true,
-                "comments": "BCN3D setting"
+                "comments": "Fracktal Setting"
               },
               "purge_in_bucket_enable_gcode": {
                 "label": "Purge At Tool Change Enable GCode",
@@ -186,7 +186,7 @@
                 "value": "'' if purge_in_bucket and not smart_purge else ';'",
                 "enabled": false,
                 "settable_per_extruder": true,
-                "comments": "BCN3D setting"
+                "comments": "Fracktal Setting"
               },
               "smart_purge": {
                 "label": "Use Adaptive Purge Distance",
@@ -195,7 +195,7 @@
                 "default_value": false,
                 "enabled": "purge_in_bucket and print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1'",
                 "settable_per_extruder": true,
-                "comments": "BCN3D setting",
+                "comments": "Fracktal Setting",
                 "children": {
                   "smart_purge_minimum_purge_distance": {
                     "label": "Minimum Purge Distance",
@@ -209,7 +209,7 @@
                     "maximum_value_warning": "50",
                     "enabled": "smart_purge and purge_in_bucket and print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1'",
                     "settable_per_extruder": true,
-                    "comments": "BCN3D setting"
+                    "comments": "Fracktal Setting"
                   },
                   "smart_purge_maximum_purge_distance": {
                     "label": "Maximum Purge Distance",
@@ -222,7 +222,7 @@
                     "maximum_value_warning": "50",
                     "enabled": "smart_purge and purge_in_bucket and print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1'",
                     "settable_per_extruder": true,
-                    "comments": "BCN3D setting"
+                    "comments": "Fracktal Setting"
                   },
                   "smart_purge_slope": {
                     "label": "Increase Distance by",
@@ -235,7 +235,7 @@
                     "maximum_value_warning": "50",
                     "enabled": "smart_purge and purge_in_bucket and print_mode == 'dual' or print_mode == 'singleT0' or print_mode == 'singleT1'",
                     "settable_per_extruder": true,
-                    "comments": "BCN3D setting"
+                    "comments": "Fracktal Setting"
                   },
                   "smart_purge_slope_gcode": {
                     "label": "Distance Gradient",
@@ -246,7 +246,7 @@
                     "value": "smart_purge_slope / float(60)",
                     "enabled": false,
                     "settable_per_extruder": true,
-                    "comments": "BCN3D setting"
+                    "comments": "Fracktal Setting"
                   }
                 }
               },
@@ -262,7 +262,7 @@
                 "value": "'' if smart_purge and purge_in_bucket else ';'",
                 "enabled": false,
                 "settable_per_extruder": true,
-                "comments": "BCN3D setting"
+                "comments": "Fracktal Setting"
               },
               "prime_tower_closest_to": {
                 "label": "Prime Tower Preferred Position",
@@ -282,7 +282,7 @@
                 "enabled": "resolveOrValue('prime_tower_enable')",
                 "settable_per_mesh": false,
                 "settable_per_extruder": false,
-                "comments": "BCN3D setting"
+                "comments": "Fracktal Setting"
               }
             }
           }
