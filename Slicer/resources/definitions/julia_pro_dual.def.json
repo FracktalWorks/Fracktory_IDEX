@@ -50,7 +50,7 @@
         "material_extrusion_cool_down_speed" : { "value": "0.15"},
         "material_bed_temperature_layer_0" : { "value": "resolveOrValue('material_bed_temperature') + 10"},
         "retraction_enable" : { "value": "True"},
-        "retraction_amount" : { "value": "1"},
+        "retraction_amount" : { "value": "2"},
         "retraction_speed" : { "value": "50"},
         "limit_support_retractions" : { "value": "True"},
         "material_standby_temperature" : { "value": "175"},
@@ -70,7 +70,7 @@
         "retraction_hop" : { "value": "0.5"},
         "support_infill_angle" : { "value": "45"},
         "adhesion_type": { "default_value": "brim" },
-        "brim_width" : { "value": "2"},
+        "brim_width" : { "value": "5"},
         "prime_tower_enable" : { "value": "True"},
         "prime_tower_position_x" : { "value": "40"},
         "prime_tower_position_y" : { "value": "20"},
@@ -102,7 +102,7 @@
         "machine_max_jerk_z": { "default_value": 0.4 },
         "machine_max_jerk_e": { "value": 10 },
 
-        "material_flow": { "default_value": 90 },
+        "material_flow": { "default_value": 95 },
         "retraction_extra_prime_amount": { "default_value": 0.06 },
 
         "prime_tower_flow" : {"value": 120},

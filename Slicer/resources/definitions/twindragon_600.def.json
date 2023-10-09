@@ -73,7 +73,7 @@
         "retraction_hop" : { "value": "0.5"},
         "support_infill_angle" : { "value": "45"},
         "adhesion_type": { "default_value": "brim" },
-        "brim_width" : { "value": "2"},
+        "brim_width" : { "value": "5"},
         "prime_tower_enable" : { "value": "True"},
         "prime_tower_position_x" : { "value": "250"},
         "prime_tower_position_y" : { "value": "20"},
@@ -105,7 +105,7 @@
         "jerk_print": { "default_value": 10 },
         "jerk_travel": { "value": 10 },
 
-        "material_flow": { "default_value": 90 },
+        "material_flow": { "default_value": 95 },
         "retraction_extra_prime_amount": { "default_value": 0.06 },
 
         "prime_tower_flow" : {"value": 120},
